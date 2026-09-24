@@ -4,170 +4,54 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="theme-color" content="#17252c">
-  <meta name="description" content="给孩子的剑门关行前想象之旅：诗词、地理与历史故事。">
-  <title>去剑门关以前</title>
+  <meta name="description" content="给孩子的剑门关行前数字童书：地图、诗词、故事与朗读。">
+  <title>去剑门关以前｜一本行前书</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header class="topbar">
-    <a class="brand" href="#start" aria-label="回到首页">剑门 · 行前书</a>
-    <nav aria-label="章节导航">
-      <a href="#gate">一道门</a>
-      <a href="#poem">蜀道难</a>
-      <a href="#story">守剑阁</a>
-      <a href="#home">四川人的家门</a>
-      <a href="#quest">到现场</a>
+<body class="book-site">
+  <header class="book-nav">
+    <a class="book-mark" href="index.html"><span>剑门</span>行前书</a>
+    <button class="nav-menu" type="button" aria-expanded="false" aria-controls="chapter-nav">章节</button>
+    <nav id="chapter-nav" aria-label="全书章节">
+      <a class="current" href="index.html">目录</a>
+      <a href="map.html">地图册</a>
+      <a href="quotes.html">剑门佳句</a>
+      <a href="shudaonan.html">蜀道难</a>
+      <a href="stories.html">故事阁</a>
+      <a href="quest.html">去现场</a>
     </nav>
   </header>
-
   <main>
-    <section class="hero" id="start">
+    <section class="cover">
       <img src="assets/jianmen-hero.png" alt="依据真实剑门关关楼与砾岩绝壁改绘的水墨画">
-      <div class="hero-shade"></div>
-      <div class="hero-copy">
-        <p class="eyebrow">出发前，先在心里走一遍</p>
+      <div class="cover-wash"></div>
+      <div class="cover-copy">
+        <p class="book-label">出发前，一天读一章</p>
         <h1>去剑门关以前</h1>
-        <p>有些山，先听过它的诗，才会看见它真正的样子。</p>
-        <a class="start-button" href="#gate">推开山门</a>
+        <p>先从地图上找到它，再跟着诗人和故事，走进四川北面的山门。</p>
+        <a class="read-next" href="map.html">今天先读：四川的门 <span>→</span></a>
       </div>
-      <span class="scroll-hint" aria-hidden="true">向下走入蜀道 ↓</span>
+      <div class="trip-date"><b>10月3日</b><span>从成都出发</span></div>
     </section>
-
-    <section class="chapter gate" id="gate">
-      <div class="chapter-number">第一幕</div>
-      <div class="gate-grid">
-        <div>
-          <p class="kicker">两座大山，为什么会成为一扇门？</p>
-          <h2>山把路挤得很窄，<br>人便在这里造了一座关。</h2>
-          <p class="lead">想象古代的四川：四周都是大山。要从北方走进来，人、马和货物不能随便翻山，只能寻找少数能够穿过群山的道路。</p>
-          <p>大剑山与小剑山之间，有一道狭窄的通路。两边山峰高高立起，远看像两扇石门——“剑门”这个名字，便有了画面。</p>
-        </div>
-        <aside class="think-card">
-          <span>先别找标准答案</span>
-          <strong>如果一条路窄到只能容下很少的人，很多人一起进攻会发生什么？</strong>
-          <button type="button" class="reveal-button" data-reveal="gate-answer">看看古人的答案</button>
-          <p id="gate-answer" class="hidden-answer">守在狭窄处的人不用面对所有敌人。这就是“一夫当关，万夫莫开”背后的地理。</p>
-        </aside>
+    <section class="reading-table" aria-labelledby="contents-title">
+      <div class="section-heading">
+        <p>全书目录</p>
+        <h2 id="contents-title">六次睡前阅读，走完一条古蜀道</h2>
+        <span>不必一次看完。每一章大约读十分钟。</span>
+      </div>
+      <div class="chapter-shelf">
+        <a class="chapter-card map-card" href="map.html"><span class="chapter-day">第一天</span><div class="card-symbol" aria-hidden="true">蜀</div><p>地图册</p><h3>四川为什么有一道门？</h3><small>中国 → 四川 → 川北 → 剑门关</small></a>
+        <a class="chapter-card" href="quotes.html"><span class="chapter-day">第二天</span><div class="card-symbol quote-symbol" aria-hidden="true">“</div><p>剑门佳句</p><h3>古人看见了怎样的山？</h3><small>李白、杜甫、陆游与更多过客</small></a>
+        <a class="chapter-card feature-card" href="shudaonan.html"><span class="chapter-day">第三、四天</span><div class="card-symbol" aria-hidden="true">难</div><p>全文诵读</p><h3>《蜀道难》</h3><small>完整全文 · 拼音 · 朗读 · 跟背</small></a>
+        <a class="chapter-card" href="stories.html"><span class="chapter-day">第五天</span><div class="card-symbol story-symbol" aria-hidden="true">关</div><p>故事阁</p><h3>山门里发生过什么？</h3><small>传说、史实与人物选择分开讲</small></a>
+        <a class="chapter-card" href="home.html"><span class="chapter-day">第六天</span><div class="card-symbol home-symbol" aria-hidden="true">家</div><p>四川人的家门</p><h3>山门后面，为什么值得守？</h3><small>从天险走回炊烟和归途</small></a>
+        <a class="chapter-card quest-card" href="quest.html"><span class="chapter-day">出发当天</span><div class="card-symbol" aria-hidden="true">寻</div><p>现场任务册</p><h3>把答案留给真正的山</h3><small>到了剑门关，再完成这六件事</small></a>
       </div>
     </section>
-
-    <section class="poem-intro" id="poem">
-      <img src="assets/shudao-poem.png" alt="依据真实剑门关层状砾岩绝壁改绘的水墨画，画中有一位小小的古代旅人">
-      <div class="poem-title">
-        <p class="chapter-number light">第二幕 · 全诗诵读</p>
-        <h2>《蜀道难》</h2>
-        <p>李白没有给蜀道画地图。他用声音，让山在我们面前升起来。</p>
-      </div>
-    </section>
-
-    <section class="poem-reader" aria-labelledby="poem-heading">
-      <div class="reader-head">
-        <div>
-          <p class="kicker">唐 · 李白</p>
-          <h2 id="poem-heading">先听见它，再背下它</h2>
-        </div>
-        <div class="reader-controls" aria-label="诵读显示设置">
-          <button type="button" class="control active" id="pinyin-toggle" aria-pressed="true">隐藏拼音</button>
-          <button type="button" class="control" id="memory-toggle" aria-pressed="false">背诵模式</button>
-        </div>
-      </div>
-
-      <div class="chant-note">三次出现的“蜀道之难，难于上青天”，像三次越来越响的山谷回声。</div>
-
-      <article class="poem-text pinyin-on">
-        <section class="poem-stanza">
-          <p class="pinyin">yī xū xī，wēi hū gāo zāi！</p><p class="verse">噫吁嚱，危乎高哉！</p>
-          <p class="pinyin">shǔ dào zhī nán，nán yú shàng qīng tiān！</p><p class="verse refrain">蜀道之难，难于上青天！</p>
-          <p class="pinyin">cán cóng jí yú fú，kāi guó hé máng rán！</p><p class="verse">蚕丛及鱼凫，开国何茫然！</p>
-          <p class="pinyin">ěr lái sì wàn bā qiān suì，bù yǔ qín sài tōng rén yān。</p><p class="verse">尔来四万八千岁，不与秦塞通人烟。</p>
-          <p class="pinyin">xī dāng tài bái yǒu niǎo dào，kě yǐ héng jué é méi diān。</p><p class="verse">西当太白有鸟道，可以横绝峨眉巅。</p>
-          <p class="pinyin">dì bēng shān cuī zhuàng shì sǐ，rán hòu tiān tī shí zhàn xiāng gōu lián。</p><p class="verse">地崩山摧壮士死，然后天梯石栈相钩连。</p>
-          <p class="pinyin">shàng yǒu liù lóng huí rì zhī gāo biāo，xià yǒu chōng bō nì zhé zhī huí chuān。</p><p class="verse">上有六龙回日之高标，下有冲波逆折之回川。</p>
-          <p class="pinyin">huáng hè zhī fēi shàng bù dé guò，yuán náo yù dù chóu pān yuán。</p><p class="verse">黄鹤之飞尚不得过，猿猱欲度愁攀援。</p>
-          <p class="pinyin">qīng ní hé pán pán，bǎi bù jiǔ zhé yíng yán luán。</p><p class="verse">青泥何盘盘，百步九折萦岩峦。</p>
-          <p class="pinyin">mén shēn lì jǐng yǎng xié xī，yǐ shǒu fǔ yīng zuò cháng tàn。</p><p class="verse">扪参历井仰胁息，以手抚膺坐长叹。</p>
-        </section>
-
-        <section class="poem-stanza">
-          <p class="pinyin">wèn jūn xī yóu hé shí huán？wèi tú chán yán bù kě pān。</p><p class="verse">问君西游何时还？畏途巉岩不可攀。</p>
-          <p class="pinyin">dàn jiàn bēi niǎo háo gǔ mù，xióng fēi cí cóng rào lín jiān。</p><p class="verse">但见悲鸟号古木，雄飞雌从绕林间。</p>
-          <p class="pinyin">yòu wén zǐ guī tí yè yuè，chóu kōng shān。</p><p class="verse">又闻子规啼夜月，愁空山。</p>
-          <p class="pinyin">shǔ dào zhī nán，nán yú shàng qīng tiān，shǐ rén tīng cǐ diāo zhū yán！</p><p class="verse refrain">蜀道之难，难于上青天，使人听此凋朱颜！</p>
-          <p class="pinyin">lián fēng qù tiān bù yíng chǐ，kū sōng dào guà yǐ jué bì。</p><p class="verse">连峰去天不盈尺，枯松倒挂倚绝壁。</p>
-          <p class="pinyin">fēi tuān pù liú zhēng xuān huī，pīng yá zhuǎn shí wàn hè léi。</p><p class="verse">飞湍瀑流争喧豗，砯崖转石万壑雷。</p>
-          <p class="pinyin">qí xiǎn yě rú cǐ，jiē ěr yuǎn dào zhī rén hú wèi hū lái zāi！</p><p class="verse">其险也如此，嗟尔远道之人胡为乎来哉！</p>
-        </section>
-
-        <section class="poem-stanza key-stanza">
-          <span class="location-tag">到了剑门关，要在山下念这一段</span>
-          <p class="pinyin">jiàn gé zhēng róng ér cuī wéi，yì fū dāng guān，wàn fū mò kāi。</p><p class="verse refrain">剑阁峥嵘而崔嵬，一夫当关，万夫莫开。</p>
-          <p class="pinyin">suǒ shǒu huò fěi qīn，huà wéi láng yǔ chái。</p><p class="verse">所守或匪亲，化为狼与豺。</p>
-          <p class="pinyin">zhāo bì měng hǔ，xī bì cháng shé；mó yá shǔn xuè，shā rén rú má。</p><p class="verse">朝避猛虎，夕避长蛇；磨牙吮血，杀人如麻。</p>
-          <p class="pinyin">jǐn chéng suī yún lè，bù rú zǎo huán jiā。</p><p class="verse">锦城虽云乐，不如早还家。</p>
-          <p class="pinyin">shǔ dào zhī nán，nán yú shàng qīng tiān，cè shēn xī wàng cháng zī jiē！</p><p class="verse refrain">蜀道之难，难于上青天，侧身西望长咨嗟！</p>
-        </section>
-      </article>
-
-      <div class="word-bank">
-        <h3>先认识这些“山一样”的字</h3>
-        <div class="word-grid">
-          <button type="button"><b>嚱</b><span>xī · 叹词</span></button>
-          <button type="button"><b>凫</b><span>fú · 野鸭</span></button>
-          <button type="button"><b>猱</b><span>náo · 善攀爬的猿</span></button>
-          <button type="button"><b>扪</b><span>mén · 用手摸</span></button>
-          <button type="button"><b>膺</b><span>yīng · 胸口</span></button>
-          <button type="button"><b>豗</b><span>huī · 喧闹轰响</span></button>
-          <button type="button"><b>砯</b><span>pīng · 水冲石壁</span></button>
-          <button type="button"><b>嵬</b><span>wéi · 山势高大</span></button>
-        </div>
-      </div>
-      <p class="source-note">粗版说明：正文采用中国大陆统编高中语文常用文本。拼音将在正式版继续按教材注释与规范字典逐字复核。</p>
-    </section>
-
-    <section class="chapter story" id="story">
-      <div class="chapter-number">第三幕</div>
-      <p class="kicker">公元263年 · 剑阁</p>
-      <h2>姜维守住了正门，<br>历史却从另一条小路走来。</h2>
-      <div class="story-path">
-        <article><span>01</span><h3>退守剑阁</h3><p>蜀汉将领姜维把军队守在险要的剑阁。山路狭窄，人数更多的魏军也难以前进。</p></article>
-        <article><span>02</span><h3>正面难破</h3><p>险要的地形像一面天然城墙。剑阁让“一夫当关”不再只是一句夸张。</p></article>
-        <article><span>03</span><h3>绕过山门</h3><p>邓艾没有继续从正面强攻，而是冒险绕行阴平小道，最终进入蜀地。</p></article>
-      </div>
-      <blockquote>好地形可以保护一个地方，<br>但历史不一定只从正门走进来。</blockquote>
-    </section>
-
-    <section class="chapter home" id="home">
-      <div class="home-copy">
-        <div class="chapter-number light">第四幕</div>
-        <p class="kicker light">山门的后面，并不只是地图上的四川</p>
-        <h2>它守着炊烟、田地、街巷，<br>也守着人们回家的方向。</h2>
-        <p>对于从北方长途跋涉而来的人，穿过剑门，是进入蜀地；对于生活在四川的人，这道关也像家门——门外是漫长险路，门内是熟悉的生活。</p>
-        <p>剑门关的特殊，不只因为它难走、难攻。更因为千百年来，人们总会想到：这道门的身后，有什么值得守护？</p>
-      </div>
-      <div class="home-light" aria-hidden="true"><span></span><span></span><span></span><span></span><span></span></div>
-    </section>
-
-    <section class="chapter quest" id="quest">
-      <div class="chapter-number">第五幕 · 到了现场</div>
-      <h2>把答案留给真正的山</h2>
-      <p class="lead">不用急着拍照。先站一会儿，看看诗里的山有没有出现。</p>
-      <div class="quest-grid">
-        <label><input type="checkbox"><span><b>寻找石门</b>哪两座山最像打开的门？</span></label>
-        <label><input type="checkbox"><span><b>测量古道</b>最窄的地方能并排走几个人？</span></label>
-        <label><input type="checkbox"><span><b>让山回应</b>找一个地方念“一夫当关，万夫莫开”。</span></label>
-        <label><input type="checkbox"><span><b>变成旅人</b>想象没有汽车和索道，你会怎样入蜀？</span></label>
-        <label><input type="checkbox"><span><b>找到敬畏</b>哪一刻，你觉得山比人强大？</span></label>
-        <label><input type="checkbox"><span><b>带回一幅画</b>回来后，画出你心里的剑门关。</span></label>
-      </div>
-      <a class="back-top" href="#start">回到山门 ↑</a>
-    </section>
+    <section class="family-note"><p>给爸爸、妈妈和语汐</p><blockquote>有些地方，先听过它的诗，才会在真正抵达时忽然认出它。</blockquote></section>
   </main>
-
-  <footer>
-    <p>给一家三口的剑门关行前书 · 粗版<br><small>主视觉依据 ping lin 拍摄的<a href="https://commons.wikimedia.org/wiki/File:%E5%8A%8D%E9%96%80%E9%97%9C%E9%97%9C%E5%8F%A3_-_panoramio.jpg" target="_blank" rel="noreferrer">关口</a>与<a href="https://commons.wikimedia.org/wiki/File:%E5%8A%8D%E5%B1%B1%E7%B5%95%E5%A3%81_-_panoramio.jpg" target="_blank" rel="noreferrer">绝壁</a>照片改绘，<a href="https://creativecommons.org/licenses/by-sa/3.0/" target="_blank" rel="noreferrer">CC BY-SA 3.0</a></small></p>
-    <p>先有想象，再去相见。</p>
-  </footer>
-  <script src="script.js"></script>
+  <footer class="book-footer"><p>给一家三口的剑门关行前书</p><p><a href="ATTRIBUTION.md">图片来源与授权</a> · 先有想象，再去相见。</p></footer>
+  <script src="book.js"></script>
 </body>
 </html>
