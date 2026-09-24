@@ -63,7 +63,10 @@
           <h2 id="poem-heading">先听见它，再背下它</h2>
         </div>
         <div class="reader-controls" aria-label="诵读显示设置">
-          <a class="audio-status audio-ready" href="https://www.cnr.cn/zgzb/zgdwt107/wzsl/" target="_blank" rel="noreferrer"><b>▶ 听乔榛朗诵《蜀道难》</b><small>男性真人朗诵 · 打开央广网官方节目页</small></a>
+          <div class="poem-audio" aria-label="《蜀道难》站内朗读">
+            <button class="audio-status audio-ready" id="poem-audio-toggle" type="button" aria-pressed="false"><b>▶ 开始朗读《蜀道难》</b><small>中文男声优先 · 0.8 倍速</small></button>
+            <button class="audio-stop" id="poem-audio-stop" type="button" disabled>停止</button>
+          </div>
           <button type="button" class="control active" id="pinyin-toggle" aria-pressed="true">隐藏拼音</button>
           <button type="button" class="control" id="memory-toggle" aria-pressed="false">背诵模式</button>
         </div>
